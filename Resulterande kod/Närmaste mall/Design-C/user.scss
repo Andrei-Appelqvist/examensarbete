@@ -1,0 +1,178 @@
+$emx-gold: #ae8e30;
+$emx-gold_two: rgba(172, 142, 54, 0.35);
+$desktop-breakpoint-extra-large: 1441px;
+$desktop-breakpoint-large: 1201px;
+$desktop-breakpoint: 1024px;
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 550px;
+body {
+  #Page {
+    margin-left: 0 !important;
+    #Header {
+      .header-content {
+        border-bottom: 1px solid $emx-gold_two;
+        .header-inner {
+          .header-item-wrapper {
+            .header-item {
+              color: $emx-gold;
+            }
+          }
+        }
+      }
+    }
+    #MainSearch {
+      border-bottom: 1px solid $emx-gold_two;
+      .search {
+        .fw-input-group {
+          .fw-input-group-text {
+            .textBox {
+              &::placeholder {
+                color: $emx-gold;
+              }
+            }
+          }
+          #SearchBtn {
+            display: none;
+          }
+        }
+      }
+    }
+    #MainContainer {
+      .master-sections {
+        .master-section {
+          .content-wrapper {
+            .main {
+              .prodlistView {
+                .prodlist-header {
+                  height: 45px;
+                  .prodlist-header-image-wrapper {
+                    display: none;
+                  }
+                  .list_info {
+                    color: black;
+                  }
+                }
+                .mainContent {
+                  #UpdatePanel1 {
+                    .prodlist-wrapper {
+                      .prodlist {
+                        .table {
+                          .header {
+                            border-bottom: 1px solid $emx-gold_two;
+                            border-top: 1px solid $emx-gold_two;
+                            a,
+                            span {
+                              font-weight: 100;
+                            }
+                            .cell {
+                              &:nth-child(5) {
+                                display: none;
+                              }
+                            }
+                          }
+                          .row {
+                            border-bottom: 1px solid $emx-gold_two;
+                            border-top: 1px solid $emx-gold_two;
+                            .cell {
+                              &:nth-child(5) {
+                                display: none;
+                              }
+                            }
+                            .ArtBtn {
+                              display: none;
+                            }
+                            .lager {
+                              i {
+                                background: black;
+                                border-radius: 100%;
+                                color: white;
+                                font-size: 14px;
+                                font-weight: 800;
+                              }
+                              padding: 0;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    #Footer {
+      .footer {
+        .footer-inner {
+          .footer-companyinfo {
+            .footerText {
+              p {
+                display: none;
+
+                &:first-child {
+                  display: block;
+                }
+              }
+            }
+          }
+          .footer-menus-content {
+            display: none;
+          }
+        }
+      }
+    }
+    .offcanvas-panel {
+      @media (min-width: $desktop-breakpoint) {
+        margin-left: 0 !important;
+      }
+      #MenuContent {
+        #CloseMenu {
+          background-color: $emx-gold;
+          i {
+            color: white;
+          }
+        }
+        .offcanvas-title {
+          color: $emx-gold;
+          font-weight: 100;
+        }
+        .menu-toolbar-tabs {
+          .fw-list-unstyled {
+            li {
+              border-color: $emx-gold_two;
+              &:first-child {
+                border: 2px solid $emx-gold;
+                #UserTabToggle {
+                  i {
+                    display: none;
+                  }
+                  #AccountLabel {
+                    color: $emx-gold;
+                    width: 100%;
+                    text-align: center;
+                  }
+                }
+              }
+              #LocationTabToggle {
+                i {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .nav-menu {
+          border-color: $emx-gold_two;
+        }
+      }
+    }
+  }
+  #DemoWrapper {
+    display: none;
+  }
+}
+#FilterToggle {
+  margin-left: 15px !important;
+}
